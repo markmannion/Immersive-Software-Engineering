@@ -60,7 +60,6 @@ slope_dict = {
 # Adjust the final yardage based on the slope and distance from hole
 for distance, adjustments in slope_dict.items():
     if yard in range(distance - 49, distance + 1):
-    #if yard <= distance and yard >= distance - 49:
         fin_yard = temp_adj_yard + adjustments.get(hole, 0)
         print("\n")
         print("\033[1m Your final adjusted yardage is:  \033[0m", fin_yard)
